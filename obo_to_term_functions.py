@@ -188,9 +188,9 @@ def get_all_paths(pdict, parent, childlist, all_paths):
 
 ''' test
 
-#	   A
-#	  / \
-#	 B   C
+#      A
+#     / \
+#    B   C
 #   /|\ / 
 #  D E F
 
@@ -223,9 +223,9 @@ def get_all_dists(all_paths):
 
 ''' test
 
-#	   A
-#	  / \
-#	 B   C
+#      A
+#     / \
+#    B   C
 #     \ / 
 #      F
 
