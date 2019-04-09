@@ -10,9 +10,13 @@ however, needs the old table format as input.
 
 Since _GOfuncR_, although primarly used with the Gene Ontology, works with any ontology, this conversion can be useful for other ontologies in _.obo_ format too, e.g. the [Human Phenotype Ontology](https://hpo.jax.org/app/).
 
-#### Examples
+#### Usage
+
 `obo_to_term_tables.py` has 2 positional arguments: the _.obo_ file and the target directory for the term tables.  
 Optional `--root_nodes` need to be defined for other ontologies than Gene Ontology.
+
+#### Examples
+Assuming you saved `obo_to_term_tables.py` and `obo_to_term_functions.py` in directory `/path/to/script/`  
 
 *  Download and convert Gene Ontology
 
