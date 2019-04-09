@@ -1,6 +1,6 @@
 ### OboToTerm
 
-Converts ontology files in _.obo_ format to tables `term.txt`, `term2term.txt` and `graph_path.txt`  
+Convert ontology files in _.obo_ format to tables `term.txt`, `term2term.txt` and `graph_path.txt`  
 from the GO MySQL Database Schema.
 
 #### Background
@@ -17,7 +17,6 @@ Optional `--root_nodes` need to be defined for other ontologies than Gene Ontolo
 *  Download and convert Gene Ontology
 
 ```
-cd /home/user/ontologies/go_graph/
 wget http://current.geneontology.org/ontology/go-basic.obo -O go-basic.obo
 /path/to/script/obo_to_term_tables.py go-basic.obo .
 ```
@@ -25,7 +24,6 @@ wget http://current.geneontology.org/ontology/go-basic.obo -O go-basic.obo
 *  Download and convert Human Phenotype Ontology
 
 ```
-cd /home/user/ontologies/hpo_graph/
 wget http://purl.obolibrary.org/obo/hp.obo
 /path/to/script/obo_to_term_tables.py hp.obo . --root_nodes "All"
 ```
