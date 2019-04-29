@@ -21,7 +21,7 @@ Assuming you saved `obo_to_term_tables.py` and `obo_to_term_functions.py` in dir
 *  Download and convert Gene Ontology
 
 ```
-wget http://current.geneontology.org/ontology/go-basic.obo -O go-basic.obo
+wget http://current.geneontology.org/ontology/go-basic.obo
 /path/to/script/obo_to_term_tables.py go-basic.obo .
 ```
 
