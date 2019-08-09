@@ -182,9 +182,12 @@ def get_all_paths(pdict, parent, childlist, all_paths):
 	if parent in pdict.keys():
 		children = pdict[parent]
 		for i in range(len(children)):
-			new_childlist = copy.deepcopy(childlist)
-			get_all_paths(pdict, children[i], new_childlist, all_paths)
+			#Avoid Loops
+			if children[i] not in childlist:
+				new_childlist = copy.deepcopy(childlist)
+				get_all_paths(pdict, children[i], new_childlist, all_paths)
 	return None
+
 
 ''' test
 
